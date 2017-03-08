@@ -39,6 +39,29 @@ var preview = {
 * Return 	isEnabled (string)
 */
 
+// 1. create parameter 
+function isItEnabled(data) {
+	// console.log(data);
+	var isEnabled = "";
+
+	for (var key in data){
+		console.log(key);
+		console.log(data[key]);
+
+		if (key === "enabled"){
+				// console.log(data[key]);
+				isEnabled += data[key];
+			};
+		// return typeof data;
+		console.log(typeof isEnabled);
+		return isEnabled;
+	};
+};
+
+
+//2. Iterate by doing this in order to get items make sure to console.log()
+// invoke = function(varName)
+console.log(isItEnabled(preview));
 /*
 * Function that changes the value from the key "enabled" to true, and returns 
 * the value from the key "enabled"
